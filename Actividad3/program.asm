@@ -3,6 +3,8 @@ D=A
 @i
 M=D //i=16384
 
+//este codigo hace que A apunte a la posicion 16384, depues el registro en A se almacena en D luego declara una variable en @i y ya por ultimo el valor almacenado en D se almacena en @i
+
 (READKEYBOARD)
 @KBD
 D=M
@@ -35,3 +37,4 @@ M=-1
 M=M+1
 @READKEYBOARD
 0;JMP
+
