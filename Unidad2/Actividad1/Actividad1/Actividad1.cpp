@@ -52,10 +52,29 @@ int main() {
 using namespace std; 
 int main() {
 
-    int a = 4;
-    int b = 8;
-
+    int a = 10, b = 20;
+    cout << "antes de swapPorValor: a = " << a << ", b = " << b << endl;
     swapPorValor(a, b);
+    cout << "despues de swapPorValor: a = " << a << ", b = " << b << endl;
+
+    cout << endl;
+
+    int c = 30, d = 40;
+    cout << "antes de swapPorReferencia: c = " << c << ", d = " << d << endl;
+    swapPorReferencia(c, d);
+    cout << "despues de swapPorReferencia: c = " << c << ", d = " << d << endl;
+
+    cout << endl;
+
+    int e = 50, f = 60;
+    cout << "antes de swapPorPuntero: e = " << e << ", f = " << f << endl;
+    swapPorPuntero(&e, &f);
+    cout << "despues de swapPorPuntero: e = " << e << ", f = " << f << endl;
+
+    return 0;
+  
+
+
 
 }
 
@@ -74,6 +93,15 @@ void swapPorReferencia(int &a,    int &b)
     temp = b;
 
 }
+
+void swapPorPuntero(int* a, int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+
+}
+
 
 
 
