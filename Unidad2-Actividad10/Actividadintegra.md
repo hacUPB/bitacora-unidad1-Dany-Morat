@@ -1,0 +1,2 @@
+Diagnostico del problema analisis
+ No hay ningun destructor que ayude a liberar esta clase estadisticas = new int[3]; y esto prodece una fuga, la consecuencia esque si no se arregla estas fugas se pueden acomular y generar fallas en el juego ademas aumentando el consumo de RAM, otro error es la linea 
