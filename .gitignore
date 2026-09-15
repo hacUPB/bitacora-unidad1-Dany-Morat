@@ -1,0 +1,37 @@
+# Directorios de Visual Studio (Configuraciones y Caché)
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+ipch/
+
+# Archivos de usuario (Configuraciones locales)
+*.suo
+*.user
+*.vcxproj.user
+*.userdb
+
+# Resultados de compilación y ejecutables
+*.exe
+*.dll
+*.lib
+*.out
+*.app
+
+# Archivos de depuración y objetos temporales
+*.obj
+*.ilk
+*.pdb
+*.idb
+*.iobj
+*.ipdb
+*.pch
+*.tlog
+*.lastbuildstate
+*.recipe
+
+# Registros y archivos de diagnóstico
+*.log
+*.cache
