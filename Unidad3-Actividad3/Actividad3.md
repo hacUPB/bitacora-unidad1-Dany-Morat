@@ -20,11 +20,13 @@
 
 3. Captura la _vtable de un objeto CircularExplosion, pega la imagen en tu bitácora, pero observa detenidamente la tabla de funciones. ¿Qué puedes observar?
 
- [alt text](<../Imagenes siscom/Actividad3.3.3.png>)
+ ![alt text](<../Imagenes siscom/Actividad3.3.3.png>)
 
  En la tabla virtual se ven la direccion de memoria de las funciones del mismo CircularExplosion
 
 4. Ahora, captura en memoria la _vtable de un objeto StarExplosion, pega la imagen en tu bitácora y observa detenidamente la tabla de funciones.Observa de nuevo ambas tablas y compara. ¿Qué puedes ver? ¿Qué puedes concluir? ¿Qué relación existe entre la tabla de funciones y los métodos virtuales? Esta pregunta que te voy a hacer no es fácil y la idea de hacerla es prepararte mentalmente para lo viene ¿Para qué crees que pueda servir una tabla de funciones virtuales? Para responder esta pregunta trata de pensar en el polimorfismo con interfaces y clases abstractas que viste al estudiar C#, por ejemplo, con interfaces:
 
 ![alt text](<../Imagenes siscom/Actividad.3.3.4.png>)
+
+Los metodos virtuales indican que una funcion debe resolverse al momento de la ejecucion asi se permite el polimorfismo mientras que la tabla virtual muestra las direcciones de memoria 
  
