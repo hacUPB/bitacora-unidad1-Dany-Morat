@@ -1,0 +1,3 @@
+![alt text](<../Imagenes siscom/Captura Unidad3-Actividad2.png>)
+Analiza el código de la aplicación y trata de explicar en tus propias palabras qué está haciendo, NO USES IA generativa. Captura pantallas de la aplicación funcionando y añádelas a la bitácora de aprendizaje.
+ Al hacer clic con el mouse se crea un proyectil con RisingParticle en la parte inferior de la pantalla que se eleva como si fuera un cohete, cuando el proyectil alcanza cierta altura explota en decenas de partículas de colores con diferentes formas geometricas se desvanecen, cuando se presiona la barra espaciadora lanza 1,000 cohetes de forma simultánea y cuando se presiona la tecla s guarda una captura de pantalla 
