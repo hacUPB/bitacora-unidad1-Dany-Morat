@@ -6,6 +6,10 @@ x64/
 x86/
 build/
 ipch/
+.dll/
+bin/
+obj/
+
 
 # Archivos de usuario (Configuraciones locales)
 *.suo
