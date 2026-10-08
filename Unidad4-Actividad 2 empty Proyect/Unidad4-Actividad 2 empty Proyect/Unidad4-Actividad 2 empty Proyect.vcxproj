@@ -111,10 +111,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\B09S112est\Documents\Daniela Garcia\bitacora-unidad1-Dany-Morat\Unidad4-Actividad 2 empty Proyect\Unidad4-Actividad 2 empty Proyect\external\glad;C:\Users\B09S112est\Documents\Daniela Garcia\bitacora-unidad1-Dany-Morat\Unidad4-Actividad 2 empty Proyect\Unidad4-Actividad 2 empty Proyect\external\glfw34;C:\Users\B09S112est\Documents\Daniela Garcia\bitacora-unidad1-Dany-Morat\Unidad4-Actividad 2 empty Proyect\Unidad4-Actividad 2 empty Proyect\external\glm-101-light;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\B09S112est\Documents\Daniela Garcia\bitacora-unidad1-Dany-Morat\Unidad4-Actividad 2 empty Proyect\Unidad4-Actividad 2 empty Proyect\external\glfw34\lib-vc2026;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
@@ -139,6 +142,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="external\glad\src\glad.c" />
     <ClCompile Include="Unidad4-Actividad 2 empty Proyect.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

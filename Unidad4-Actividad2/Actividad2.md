@@ -4,3 +4,4 @@ Necesito que hagas digestión de esta información y que la entiendas. Para ello
  El GLAD carga las funciones 
 
  ¿Cómo se relacionan entre sí?
+ El GLFW crea el contexto y la ventana, opengl32.lb inica el opengl, el GLM ayuda hacer matematicas para animaciones, y el GLAD carga las funciones del driver en la GPU
