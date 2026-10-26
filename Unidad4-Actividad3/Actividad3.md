@@ -39,7 +39,8 @@
  eL OpenGL Legacy es un OpenGl antiguo con sus primeras versiones de API, la diferencia es que el OpenGL actual es multiplataforma y el Lagacy es el modelo original
 
 9. ¿Qué es el shader program? ¿Por qué es importante en OpenGL moderno?
+ Es un programa que se carga directamente desde la GPU une diferentes shaders individuales que hacen funcionan la geometria y pixeles 3D
 
 10. Trata de revisar el código setupTriangle(), intuitivamente ¿Qué crees que hace? ¿Qué crees que es el VAO y el VBO?
-11. En el ciclo principal (game loop) de OpenGL, notaste que en cada frame (cuadro) le decimos a openGL que use el shader program y el VAO. Si le indicas esto antes del game loop ¿Será necesario seguirlo haciendo en cada loop? Si no es necesario ¿En qué casos crees que esto puede ser útil?
-12. Finalmente, recuerda lo que hace `glfwSwapBuffers(mainWindow);` ¿Por qué crees que es importante? ¿Qué pasaría si no lo llamas? ¿Cómo explicas lo que pasa si no lo llamas? (experimenta)
+ En esta linea carga la posicion de los vetices y carga la GPU, La VAO es un objeto que encapsula todos los estados de los buffers y atributos de vertices necesarios para dibujar un triangulo 
+ 
