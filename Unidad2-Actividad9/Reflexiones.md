@@ -1,0 +1,6 @@
+1. ¿Qué puedes concluir de los miembros estáticos y de instancia de una clase en C++? ¿Cómo se gestionan en memoria? ¿Qué ventajas y desventajas tienen? ¿Cuándo es útil utilizarlos?
+ Los miembros con instancias cada miembro tiene su propia copia con  valor mientras que el estatico no pertenece solo a un objeto todos tienen el mismo valor, los objetos pueden acceder al mismo total pero no tienen copia individua de el
+
+2. En el programa, en qué segmento de memoria se están almacenando c1, c2, c3 y Contador::total? Ten especial cuidado con la respuesta que das para el caso de c3, piensa de nuevo, qué es c3 y qué está almacenando. Ahora, responde de nuevo, en qué segmento de la memoria se está almacenando c3 y en qué segmento de la memoria se está almacenando el objeto al que apunta c3.
+ c1 esta creado dentro del main por o que esta en el stack, c2 es un objeto local por lo que tambien esta en el stack, y en c3 el objeto al que apunta esta en el heap, el Contador::total es un dato global 
+ 
