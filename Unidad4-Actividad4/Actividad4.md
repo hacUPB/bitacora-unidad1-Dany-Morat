@@ -24,3 +24,9 @@
 
 9. ¿Qué implica para la GPU que una aplicación tenga múltiples fuentes de iluminación?
  Tendria que trabajar muchisimo mas ya que debe calcular como afecta cada luz individual en una superficie y si son muchas posiblemente se sobre sature
+
+10. Escribe un resumen en tus propias palabras de lo que se necesita para dibujar un triángulo en OpenGL.
+ Primero se necesitan saber las coordenadas de los vertices del triangulo en un NDC luego se suben a la GPU mediante el VBO y se configuran sus atributos con un VAO 
+
+11. Escribe un resumen en tus propias palabras de lo que necesitas para poder usar un shader en OpenGL.
+ Primero para poder utilizar un shader se necesita escribir, compilar y enlazar al menos un vertex shader y un fragment shader en GLSL dentro de un porgrama de sombreadores el cual se activa con un enlace como glUse Program y luego llama al dicujo con glDrawArrays para que la tarjeta grafica procese la geometria y pinte los pixeles

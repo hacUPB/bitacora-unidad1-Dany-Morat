@@ -27,11 +27,15 @@ const char* vertexShaderSrc = R"glsl(
     }
 )glsl";
 
+// Modificamos el Fragment Shader para aceptar el uniform 'time' y modular el color
 const char* fragmentShaderSrc = R"glsl(
     #version 460 core
     out vec4 FragColor;
+    uniform float time;
     void main() {
-        FragColor = vec4(1.0, 0.5, 0.2, 1.0);
+        // La función sin() oscila entre -1 y 1. La normalizamos a un rango de 0.0 a 1.0
+        float greenValue = (sin(time) + 1.0) / 2.0;
+        FragColor = vec4(1.0, greenValue, 0.2, 1.0);
     }
 )glsl";
 
@@ -118,7 +122,7 @@ int main()
 	// 3) Lee el tamaño del framebuffer
 	int bufferWidth, bufferHeight;
 	glfwGetFramebufferSize(mainWindow, &bufferWidth, &bufferHeight);
-	
+
 	// 4) Callbacks 
 	glfwSetFramebufferSizeCallback(mainWindow, framebuffer_size_callback);
 
@@ -140,6 +144,9 @@ int main()
 	// 8) Genera el contenido a mostrar
 	setupTriangle();
 
+	// Obtenemos la ubicación del uniform "time" antes de entrar al bucle
+	int timeLocation = glGetUniformLocation(shaderProg, "time");
+
 	// 9) Configura el viewport
 	glViewport(0, 0, bufferWidth, bufferHeight);
 
@@ -150,16 +157,20 @@ int main()
 		// 11) Manejo de eventos
 		glfwPollEvents();
 
-	
+
 		// 12) Procesa la entrada
 		processInput(mainWindow);
 
 		// 13) Configura el color de fondo y limpia el framebuffer
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
-		
+
 		// 14) Indica a OpenGL que use el shader program
 		glUseProgram(shaderProg);
+
+		// Obtenemos el tiempo actual transcurrido y lo enviamos al uniform del shader
+		float currentTime = (float)glfwGetTime();
+		glUniform1f(timeLocation, currentTime);
 
 		// 15) Activa el VAO y dibuja el triángulo
 		glBindVertexArray(VAO);
