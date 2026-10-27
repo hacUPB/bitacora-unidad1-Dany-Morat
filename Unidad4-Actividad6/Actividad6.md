@@ -16,7 +16,7 @@ void main() {
  Matematicamente la funcion sen oscila entre -1 y 1 asi creo la funcion sin(time)
 
 4. Incluye una captura de pantalla o **UN ENLACE** a un video mostrando el resultado del triángulo con color cambiante.
- <video controls src="../Imagenes siscom/WhatsApp Video 2026-10-26 at 18.41.16.mp4" title="Title"></video>
+ https://youtu.be/oV6cDawx0y8
 
 5. **Reflexión:** ¿Qué otros efectos visuales simples podrías lograr usando el tiempo como `uniform`? Piensa en la posición, el tamaño o la rotación (aunque no hemos visto rotaciones formalmente, ¡intuitivamente podrías intentarlo!). Anota al menos una idea.
  Creo que se puede utilizar como en algo del oceano que este flotando aplicando lo mismo pero sobre coordenas Y
